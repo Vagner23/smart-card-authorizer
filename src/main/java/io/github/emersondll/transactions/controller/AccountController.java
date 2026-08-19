@@ -1,4 +1,4 @@
-﻿package io.github.vagner23.transactions.controller;
+package io.github.vagner23.transactions.controller;
 
 import java.net.URI;
 import java.util.Objects;
@@ -26,7 +26,7 @@ import lombok.extern.slf4j.Slf4j;
  *
  * <p>Base path: {@code /digital/transactions/v1} (inherited from {@link BaseController})</p>
  *
- * @author Emerson Lima
+ * @author Vagner Cardoso
  * @version 1.0
  * @since 1.0.0
  * @see AccountService for business logic

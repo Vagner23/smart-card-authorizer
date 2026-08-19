@@ -1,4 +1,4 @@
-﻿package io.github.vagner23.transactions.model.response;
+package io.github.vagner23.transactions.model.response;
 
 import java.util.Objects;
 
@@ -11,7 +11,7 @@ import java.util.Objects;
  * @param accountId      the system-generated unique account identifier (UUID)
  * @param documentNumber the customer's document number associated with this account
  *
- * @author Emerson Lima
+ * @author Vagner Cardoso
  * @since 1.0.0
  * @see AccountResponse for the minimal creation response
  */

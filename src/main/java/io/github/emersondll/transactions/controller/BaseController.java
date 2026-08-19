@@ -1,4 +1,4 @@
-﻿package io.github.vagner23.transactions.controller;
+package io.github.vagner23.transactions.controller;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 
@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
  * {@code /digital/transactions/v1} request mapping, ensuring consistent
  * API versioning across the application.</p>
  *
- * @author Emerson Lima
+ * @author Vagner Cardoso
  * @since 1.0.0
  */
 @RequestMapping("digital/transactions/v1")

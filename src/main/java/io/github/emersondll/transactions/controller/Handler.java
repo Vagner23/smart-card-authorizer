@@ -1,4 +1,4 @@
-﻿package io.github.vagner23.transactions.controller;
+package io.github.vagner23.transactions.controller;
 
 import java.time.LocalDateTime;
 
@@ -23,7 +23,7 @@ import lombok.extern.slf4j.Slf4j;
  * <p>Error response record: {@link ErrorResponse} â€” includes an error code,
  * a human-readable message, and the timestamp of the failure.</p>
  *
- * @author Emerson Lima
+ * @author Vagner Cardoso
  * @version 1.0
  * @since 1.0.0
  */

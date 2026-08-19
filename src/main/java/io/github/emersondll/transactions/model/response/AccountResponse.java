@@ -1,4 +1,4 @@
-﻿package io.github.vagner23.transactions.model.response;
+package io.github.vagner23.transactions.model.response;
 
 import java.util.Objects;
 
@@ -11,7 +11,7 @@ import java.util.Objects;
  *
  * @param accountId the system-generated unique account identifier (UUID)
  *
- * @author Emerson Lima
+ * @author Vagner Cardoso
  * @since 1.0.0
  * @see AccountDetailResponse for the full account view including document number
  */

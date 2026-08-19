@@ -1,4 +1,4 @@
-﻿package io.github.vagner23.transactions.model.request;
+package io.github.vagner23.transactions.model.request;
 
 import jakarta.validation.constraints.NotBlank;
 import java.util.Objects;
@@ -12,7 +12,7 @@ import java.util.Objects;
  * @param documentNumber the customer's unique document number (CPF/CNPJ).
  *                       Must be non-null and non-blank.
  *
- * @author Emerson Lima
+ * @author Vagner Cardoso
  * @since 1.0.0
  */
 public record AccountRequest(

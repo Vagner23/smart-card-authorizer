@@ -1,4 +1,4 @@
-﻿package io.github.vagner23.transactions.repository;
+package io.github.vagner23.transactions.repository;
 
 import io.github.vagner23.transactions.document.AccountDocument;
 
@@ -9,7 +9,7 @@ import io.github.vagner23.transactions.document.AccountDocument;
  * CRUD operations. Implemented automatically by Spring Data MongoDB
  * when combined with {@link AccountRepository}.</p>
  *
- * @author Emerson Lima
+ * @author Vagner Cardoso
  * @since 1.0.0
  */
 public interface AccountRepositoryCustom {

@@ -1,4 +1,4 @@
-﻿package io.github.vagner23.transactions.config.constants;
+package io.github.vagner23.transactions.config.constants;
 
 /**
  * Constants for the predefined operation type descriptions stored in MongoDB.
@@ -6,7 +6,7 @@
  * <p>These strings are used both as seed data (in {@link io.github.vagner23.transactions.config.MongoDbDDL})
  * and as match targets in the transaction service to determine routing and sign normalisation.</p>
  *
- * @author Emerson Lima
+ * @author Vagner Cardoso
  * @since 1.0.0
  */
 public final class MongoDbOperationTypeConstants {

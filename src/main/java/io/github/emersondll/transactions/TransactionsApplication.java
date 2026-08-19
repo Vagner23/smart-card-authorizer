@@ -1,4 +1,4 @@
-﻿package io.github.vagner23.transactions;
+package io.github.vagner23.transactions;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

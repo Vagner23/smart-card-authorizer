@@ -1,4 +1,4 @@
-﻿package io.github.vagner23.transactions.service.impl;
+package io.github.vagner23.transactions.service.impl;
 
 import java.math.BigDecimal;
 import java.util.List;
@@ -38,7 +38,7 @@ import lombok.extern.slf4j.Slf4j;
  *
  * <p>Thread Safety: Stateless service; thread-safe as a Spring singleton.</p>
  *
- * @author Emerson Lima
+ * @author Vagner Cardoso
  * @version 1.0
  * @since 1.0.0
  * @see AccountService for account look-up

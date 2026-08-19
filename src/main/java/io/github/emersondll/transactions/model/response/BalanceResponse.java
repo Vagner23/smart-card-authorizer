@@ -1,4 +1,4 @@
-﻿package io.github.vagner23.transactions.model.response;
+package io.github.vagner23.transactions.model.response;
 
 import java.math.BigDecimal;
 import java.util.Objects;
@@ -12,7 +12,7 @@ import java.util.Objects;
  *
  * @param amount the net balance amount; never {@code null}
  *
- * @author Emerson Lima
+ * @author Vagner Cardoso
  * @since 1.0.0
  */
 public record BalanceResponse(BigDecimal amount) {

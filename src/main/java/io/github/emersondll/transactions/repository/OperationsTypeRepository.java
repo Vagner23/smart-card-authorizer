@@ -1,4 +1,4 @@
-﻿package io.github.vagner23.transactions.repository;
+package io.github.vagner23.transactions.repository;
 
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.stereotype.Repository;
@@ -12,7 +12,7 @@ import io.github.vagner23.transactions.document.OperationsTypeDocument;
  * Operation types are pre-seeded at startup and are effectively read-only
  * during normal application operation.</p>
  *
- * @author Emerson Lima
+ * @author Vagner Cardoso
  * @since 1.0.0
  * @see io.github.vagner23.transactions.config.MongoDbDDL for seed data
  */

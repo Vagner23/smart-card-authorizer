@@ -1,4 +1,4 @@
-﻿package io.github.vagner23.transactions.config;
+package io.github.vagner23.transactions.config;
 
 import java.util.Objects;
 
@@ -28,7 +28,7 @@ import lombok.extern.slf4j.Slf4j;
  *   <li>{@code WITHDRAWAL} â€” withdrawal transaction events</li>
  * </ul>
  *
- * @author Emerson Lima
+ * @author Vagner Cardoso
  * @version 1.0
  * @since 1.0.0
  * @see io.github.vagner23.transactions.config.constants.RabbitMqConstants for queue name constants

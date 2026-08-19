@@ -1,4 +1,4 @@
-﻿package io.github.vagner23.transactions;
+package io.github.vagner23.transactions;
 
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;

@@ -1,4 +1,4 @@
-﻿package io.github.vagner23.transactions.repository;
+package io.github.vagner23.transactions.repository;
 
 import java.util.List;
 
@@ -15,7 +15,7 @@ import io.github.vagner23.transactions.document.TransactionsDocument;
  * custom query methods from {@link TransactionsRepositoryCustom}. Spring Data
  * MongoDB automatically generates the implementation at runtime.</p>
  *
- * @author Emerson Lima
+ * @author Vagner Cardoso
  * @since 1.0.0
  */
 @Repository

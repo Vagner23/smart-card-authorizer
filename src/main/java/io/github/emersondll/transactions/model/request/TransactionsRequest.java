@@ -1,4 +1,4 @@
-﻿package io.github.vagner23.transactions.model.request;
+package io.github.vagner23.transactions.model.request;
 
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
@@ -17,7 +17,7 @@ import java.util.Objects;
  *                        3=withdrawal, 4=payment) (non-null, non-blank)
  * @param amount          the monetary value of the transaction (non-null)
  *
- * @author Emerson Lima
+ * @author Vagner Cardoso
  * @since 1.0.0
  */
 public record TransactionsRequest(

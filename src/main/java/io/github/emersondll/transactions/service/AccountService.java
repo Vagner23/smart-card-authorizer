@@ -1,4 +1,4 @@
-﻿package io.github.vagner23.transactions.service;
+package io.github.vagner23.transactions.service;
 
 import io.github.vagner23.transactions.document.AccountDocument;
 import io.github.vagner23.transactions.exception.AccountNotFoundException;
@@ -13,7 +13,7 @@ import io.github.vagner23.transactions.model.response.AccountResponse;
  * Implementations must enforce idempotency on account creation (same document
  * number always returns the same account) and publish domain events via RabbitMQ.</p>
  *
- * @author Emerson Lima
+ * @author Vagner Cardoso
  * @version 1.0
  * @since 1.0.0
  * @see io.github.vagner23.transactions.service.impl.AccountServiceImpl

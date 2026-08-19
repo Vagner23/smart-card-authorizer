@@ -1,4 +1,4 @@
-﻿package io.github.vagner23.transactions.document;
+package io.github.vagner23.transactions.document;
 
 import java.time.LocalDateTime;
 
@@ -26,7 +26,7 @@ import lombok.NoArgsConstructor;
  *   <li>{@code PAGAMENTO} â€” payment (credit)</li>
  * </ol>
  *
- * @author Emerson Lima
+ * @author Vagner Cardoso
  * @version 1.0
  * @since 1.0.0
  * @see io.github.vagner23.transactions.repository.OperationsTypeRepository

@@ -1,4 +1,4 @@
-﻿package io.github.vagner23.transactions.service;
+package io.github.vagner23.transactions.service;
 
 /**
  * Service contract for publishing messages to RabbitMQ queues.
@@ -7,7 +7,7 @@
  * (account creation, transaction registration), a message is sent to the
  * appropriate queue for downstream consumers.</p>
  *
- * @author Emerson Lima
+ * @author Vagner Cardoso
  * @version 1.0
  * @since 1.0.0
  * @see io.github.vagner23.transactions.service.impl.RabbitMqServiceImpl

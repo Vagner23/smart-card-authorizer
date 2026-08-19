@@ -1,4 +1,4 @@
-﻿package io.github.vagner23.transactions.document;
+package io.github.vagner23.transactions.document;
 
 import java.time.LocalDateTime;
 
@@ -20,7 +20,7 @@ import lombok.NoArgsConstructor;
  * <p>Thread Safety: Instances are mutable and not thread-safe. Never share
  * a document instance across threads without external synchronisation.</p>
  *
- * @author Emerson Lima
+ * @author Vagner Cardoso
  * @version 1.0
  * @since 1.0.0
  * @see io.github.vagner23.transactions.repository.AccountRepository

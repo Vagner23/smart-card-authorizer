@@ -1,11 +1,11 @@
-﻿package io.github.vagner23.transactions.exception;
+package io.github.vagner23.transactions.exception;
 
 /**
  * Exception thrown when a transaction request contains invalid or missing data.
  *
  * <p>Mapped to HTTP 400 BAD REQUEST by the global exception handler.</p>
  *
- * @author Emerson Lima
+ * @author Vagner Cardoso
  * @since 1.0.0
  */
 public class InvalidTransactionException extends RuntimeException {

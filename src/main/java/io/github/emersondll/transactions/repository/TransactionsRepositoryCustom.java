@@ -1,4 +1,4 @@
-﻿package io.github.vagner23.transactions.repository;
+package io.github.vagner23.transactions.repository;
 
 import java.util.List;
 
@@ -11,7 +11,7 @@ import io.github.vagner23.transactions.document.TransactionsDocument;
  * CRUD operations. Implemented automatically by Spring Data MongoDB
  * when combined with {@link TransactionsRepository}.</p>
  *
- * @author Emerson Lima
+ * @author Vagner Cardoso
  * @since 1.0.0
  */
 public interface TransactionsRepositoryCustom {

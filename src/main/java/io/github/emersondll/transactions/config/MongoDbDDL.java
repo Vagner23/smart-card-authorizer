@@ -1,4 +1,4 @@
-﻿package io.github.vagner23.transactions.config;
+package io.github.vagner23.transactions.config;
 
 import java.time.LocalDateTime;
 import java.util.List;
@@ -29,7 +29,7 @@ import lombok.extern.slf4j.Slf4j;
  *   <li>ID {@code 4}: PAGAMENTO (payment)</li>
  * </ol>
  *
- * @author Emerson Lima
+ * @author Vagner Cardoso
  * @version 1.0
  * @since 1.0.0
  * @see OperationsTypeRepository

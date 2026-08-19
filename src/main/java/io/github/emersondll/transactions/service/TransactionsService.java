@@ -1,4 +1,4 @@
-﻿package io.github.vagner23.transactions.service;
+package io.github.vagner23.transactions.service;
 
 import io.github.vagner23.transactions.exception.AccountNotFoundException;
 import io.github.vagner23.transactions.exception.InvalidTransactionException;
@@ -14,7 +14,7 @@ import io.github.vagner23.transactions.model.response.TransactionsResponse;
  * computing account balances. Implementations validate the account and
  * operation type before persisting, and publish events via RabbitMQ.</p>
  *
- * @author Emerson Lima
+ * @author Vagner Cardoso
  * @version 1.0
  * @since 1.0.0
  * @see io.github.vagner23.transactions.service.impl.TransactionsServiceImpl

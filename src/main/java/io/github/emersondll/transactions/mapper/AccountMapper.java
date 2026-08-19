@@ -1,4 +1,4 @@
-﻿package io.github.vagner23.transactions.mapper;
+package io.github.vagner23.transactions.mapper;
 
 import java.time.LocalDateTime;
 import java.util.Objects;
@@ -21,7 +21,7 @@ import lombok.extern.slf4j.Slf4j;
  *
  * <p>Thread Safety: Stateless and thread-safe; safe to use as a Spring singleton.</p>
  *
- * @author Emerson Lima
+ * @author Vagner Cardoso
  * @version 1.0
  * @since 1.0.0
  */

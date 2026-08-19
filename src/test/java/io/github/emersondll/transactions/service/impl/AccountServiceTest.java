@@ -1,4 +1,4 @@
-﻿package io.github.vagner23.transactions.service.impl;
+package io.github.vagner23.transactions.service.impl;
 
 import java.time.LocalDateTime;
 import java.util.Optional;

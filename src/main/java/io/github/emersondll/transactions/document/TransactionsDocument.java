@@ -1,4 +1,4 @@
-﻿package io.github.vagner23.transactions.document;
+package io.github.vagner23.transactions.document;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
@@ -24,7 +24,7 @@ import lombok.NoArgsConstructor;
  *   <li>Positive ({@code > 0}): credit operations (payments)</li>
  * </ul>
  *
- * @author Emerson Lima
+ * @author Vagner Cardoso
  * @version 1.0
  * @since 1.0.0
  * @see io.github.vagner23.transactions.repository.TransactionsRepository

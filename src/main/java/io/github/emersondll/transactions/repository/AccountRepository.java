@@ -1,4 +1,4 @@
-﻿package io.github.vagner23.transactions.repository;
+package io.github.vagner23.transactions.repository;
 
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.data.mongodb.repository.Query;
@@ -13,7 +13,7 @@ import io.github.vagner23.transactions.document.AccountDocument;
  * custom query methods from {@link AccountRepositoryCustom}. Spring Data
  * MongoDB automatically generates the implementation at runtime.</p>
  *
- * @author Emerson Lima
+ * @author Vagner Cardoso
  * @since 1.0.0
  */
 @Repository

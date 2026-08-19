@@ -1,4 +1,4 @@
-﻿package io.github.vagner23.transactions.service;
+package io.github.vagner23.transactions.service;
 
 import io.github.vagner23.transactions.document.OperationsTypeDocument;
 import io.github.vagner23.transactions.exception.OperationTypeNotFoundException;
@@ -10,7 +10,7 @@ import io.github.vagner23.transactions.exception.OperationTypeNotFoundException;
  * operation. Implementations return the full entity so the transaction service
  * can inspect the description to determine routing and sign normalisation rules.</p>
  *
- * @author Emerson Lima
+ * @author Vagner Cardoso
  * @version 1.0
  * @since 1.0.0
  * @see io.github.vagner23.transactions.service.impl.OperationsTypeServiceImpl

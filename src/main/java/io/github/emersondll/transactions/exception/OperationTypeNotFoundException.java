@@ -1,11 +1,11 @@
-﻿package io.github.vagner23.transactions.exception;
+package io.github.vagner23.transactions.exception;
 
 /**
  * Exception thrown when an operation type is not found by the given identifier.
  *
  * <p>Mapped to HTTP 404 NOT FOUND by the global exception handler.</p>
  *
- * @author Emerson Lima
+ * @author Vagner Cardoso
  * @since 1.0.0
  */
 public class OperationTypeNotFoundException extends RuntimeException {

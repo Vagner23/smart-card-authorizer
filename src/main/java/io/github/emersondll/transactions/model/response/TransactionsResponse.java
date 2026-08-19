@@ -1,4 +1,4 @@
-﻿package io.github.vagner23.transactions.model.response;
+package io.github.vagner23.transactions.model.response;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
@@ -17,7 +17,7 @@ import java.util.Objects;
  *                        positive = payment/credit)
  * @param eventDate       the UTC timestamp when the transaction was recorded
  *
- * @author Emerson Lima
+ * @author Vagner Cardoso
  * @since 1.0.0
  */
 public record TransactionsResponse(
