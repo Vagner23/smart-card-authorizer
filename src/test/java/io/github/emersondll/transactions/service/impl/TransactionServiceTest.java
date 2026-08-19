@@ -16,7 +16,6 @@ import org.mockito.junit.jupiter.MockitoExtension;
 import io.github.emersondll.transactions.document.AccountDocument;
 import io.github.emersondll.transactions.document.OperationsTypeDocument;
 import io.github.emersondll.transactions.document.TransactionsDocument;
-import io.github.emersondll.transactions.exception.InvalidTransactionException;
 import io.github.emersondll.transactions.mapper.TransactionMapper;
 import io.github.emersondll.transactions.model.request.TransactionsRequest;
 import io.github.emersondll.transactions.model.response.AccountDetailResponse;
@@ -58,7 +57,13 @@ class TransactionServiceTest {
 
     @BeforeEach
     void setup() {
-        testClass = new TransactionsServiceImpl(accountService, typeService, repository, mapper, mqService);
+        testClass = new TransactionsServiceImpl(
+                accountService,
+                typeService,
+                repository,
+                mapper,
+                mqService
+        );
     }
 
     // ---- resolveQueue ----
@@ -97,7 +102,9 @@ class TransactionServiceTest {
     @DisplayName("normaliseAmountSign should keep amount negative for cash purchase with positive input")
     void shouldNegatePositiveAmountForCashPurchase() {
         TransactionsRequest request = transactionRequest(new BigDecimal(10));
-        TransactionsRequest result = testClass.normaliseAmountSign(request, operationType("COMPRA A VISTA"));
+        TransactionsRequest result =
+                testClass.normaliseAmountSign(request, operationType("COMPRA A VISTA"));
+
         Assertions.assertEquals(new BigDecimal(-10), result.amount());
     }
 
@@ -105,7 +112,9 @@ class TransactionServiceTest {
     @DisplayName("normaliseAmountSign should keep amount negative for cash purchase with negative input")
     void shouldKeepNegativeAmountForCashPurchase() {
         TransactionsRequest request = transactionRequest(new BigDecimal(-10));
-        TransactionsRequest result = testClass.normaliseAmountSign(request, operationType("COMPRA A VISTA"));
+        TransactionsRequest result =
+                testClass.normaliseAmountSign(request, operationType("COMPRA A VISTA"));
+
         Assertions.assertEquals(new BigDecimal(-10), result.amount());
     }
 
@@ -113,7 +122,9 @@ class TransactionServiceTest {
     @DisplayName("normaliseAmountSign should keep amount negative for instalment purchase with positive input")
     void shouldNegatePositiveAmountForInstalmentPurchase() {
         TransactionsRequest request = transactionRequest(new BigDecimal(10));
-        TransactionsRequest result = testClass.normaliseAmountSign(request, operationType("COMPRA PARCELADA"));
+        TransactionsRequest result =
+                testClass.normaliseAmountSign(request, operationType("COMPRA PARCELADA"));
+
         Assertions.assertEquals(new BigDecimal(-10), result.amount());
     }
 
@@ -121,7 +132,9 @@ class TransactionServiceTest {
     @DisplayName("normaliseAmountSign should keep amount negative for withdrawal with already negative input")
     void shouldKeepNegativeAmountForWithdrawal() {
         TransactionsRequest request = transactionRequest(new BigDecimal(-10));
-        TransactionsRequest result = testClass.normaliseAmountSign(request, operationType("SAQUE"));
+        TransactionsRequest result =
+                testClass.normaliseAmountSign(request, operationType("SAQUE"));
+
         Assertions.assertEquals(new BigDecimal(-10), result.amount());
     }
 
@@ -129,7 +142,9 @@ class TransactionServiceTest {
     @DisplayName("normaliseAmountSign should make amount positive for payment with positive input")
     void shouldKeepPositiveAmountForPayment() {
         TransactionsRequest request = transactionRequest(new BigDecimal(10));
-        TransactionsRequest result = testClass.normaliseAmountSign(request, operationType("PAGAMENTO"));
+        TransactionsRequest result =
+                testClass.normaliseAmountSign(request, operationType("PAGAMENTO"));
+
         Assertions.assertEquals(new BigDecimal(10), result.amount());
     }
 
@@ -137,7 +152,9 @@ class TransactionServiceTest {
     @DisplayName("normaliseAmountSign should negate negative amount for payment")
     void shouldNegateNegativeAmountForPayment() {
         TransactionsRequest request = transactionRequest(new BigDecimal(-10));
-        TransactionsRequest result = testClass.normaliseAmountSign(request, operationType("PAGAMENTO"));
+        TransactionsRequest result =
+                testClass.normaliseAmountSign(request, operationType("PAGAMENTO"));
+
         Assertions.assertEquals(new BigDecimal(10), result.amount());
     }
 
@@ -146,27 +163,34 @@ class TransactionServiceTest {
     @Test
     @DisplayName("createTransaction should return response when all inputs are valid")
     void shouldCreateTransactionSuccessfully() throws Exception {
-        Mockito.when(typeService.findById(Mockito.anyString())).thenReturn(operationType("COMPRA A VISTA"));
-        Mockito.when(accountService.findById(Mockito.anyString())).thenReturn(accountDetailResponse());
+        Mockito.when(typeService.findById(Mockito.anyString()))
+                .thenReturn(operationType("COMPRA A VISTA"));
+
+        Mockito.when(accountService.findById(Mockito.anyString()))
+                .thenReturn(accountDetailResponse());
+
         Mockito.when(mapper.requestToDocument(Mockito.any(TransactionsRequest.class)))
                 .thenReturn(transactionsDocument());
+
         Mockito.when(repository.save(Mockito.any(TransactionsDocument.class)))
                 .thenReturn(transactionsDocument());
+
         Mockito.when(mapper.documentToResponse(Mockito.any(TransactionsDocument.class)))
                 .thenReturn(transactionResponse());
 
-        TransactionsResponse response = testClass.createTransaction(transactionRequest(new BigDecimal(10)));
+        TransactionsResponse response =
+                testClass.createTransaction(transactionRequest(new BigDecimal(10)));
 
         Assertions.assertEquals(new BigDecimal(20), response.amount());
     }
 
     @Test
-    @DisplayName("createTransaction should throw InvalidTransactionException when amount is null")
-    void shouldThrowInvalidTransactionWhenAmountIsNull() {
-        TransactionsRequest request = new TransactionsRequest("accountId", "1", BigDecimal.ONE)
-                .withAmount(null);
-
-        assertThrows(NullPointerException.class, () -> testClass.createTransaction(request));
+    @DisplayName("TransactionsRequest should throw NullPointerException when amount is null")
+    void shouldThrowNullPointerExceptionWhenAmountIsNull() {
+        assertThrows(
+                NullPointerException.class,
+                () -> new TransactionsRequest("accountId", "1", null)
+        );
     }
 
     // ---- recoveryBalance ----
@@ -176,10 +200,12 @@ class TransactionServiceTest {
     void shouldComputeBalanceAsTransactionSum() {
         Mockito.when(accountService.findByDocumentNumber(Mockito.anyString()))
                 .thenReturn(accountDocument());
+
         Mockito.when(repository.findAllByAccountId(Mockito.anyString()))
                 .thenReturn(List.of(transactionsDocument()));
 
-        BalanceResponse response = testClass.recoveryBalance("anyDocumentNumber");
+        BalanceResponse response =
+                testClass.recoveryBalance("anyDocumentNumber");
 
         Assertions.assertEquals(new BigDecimal(10), response.amount());
     }
@@ -187,7 +213,13 @@ class TransactionServiceTest {
     // ---- helpers ----
 
     private TransactionsResponse transactionResponse() {
-        return new TransactionsResponse("5", "1", "6", new BigDecimal(20), LocalDateTime.now());
+        return new TransactionsResponse(
+                "5",
+                "1",
+                "6",
+                new BigDecimal(20),
+                LocalDateTime.now()
+        );
     }
 
     private TransactionsDocument transactionsDocument() {
