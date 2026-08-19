@@ -1,11 +1,11 @@
-package io.github.emersondll.transactions.service;
+﻿package io.github.vagner23.transactions.service;
 
-import io.github.emersondll.transactions.exception.AccountNotFoundException;
-import io.github.emersondll.transactions.exception.InvalidTransactionException;
-import io.github.emersondll.transactions.exception.OperationTypeNotFoundException;
-import io.github.emersondll.transactions.model.request.TransactionsRequest;
-import io.github.emersondll.transactions.model.response.BalanceResponse;
-import io.github.emersondll.transactions.model.response.TransactionsResponse;
+import io.github.vagner23.transactions.exception.AccountNotFoundException;
+import io.github.vagner23.transactions.exception.InvalidTransactionException;
+import io.github.vagner23.transactions.exception.OperationTypeNotFoundException;
+import io.github.vagner23.transactions.model.request.TransactionsRequest;
+import io.github.vagner23.transactions.model.response.BalanceResponse;
+import io.github.vagner23.transactions.model.response.TransactionsResponse;
 
 /**
  * Service contract for financial transaction operations.
@@ -17,7 +17,7 @@ import io.github.emersondll.transactions.model.response.TransactionsResponse;
  * @author Emerson Lima
  * @version 1.0
  * @since 1.0.0
- * @see io.github.emersondll.transactions.service.impl.TransactionsServiceImpl
+ * @see io.github.vagner23.transactions.service.impl.TransactionsServiceImpl
  */
 public interface TransactionsService {
 
@@ -46,3 +46,4 @@ public interface TransactionsService {
      */
     BalanceResponse recoveryBalance(String documentNumber);
 }
+

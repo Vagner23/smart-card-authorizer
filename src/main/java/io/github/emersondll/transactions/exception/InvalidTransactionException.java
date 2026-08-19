@@ -1,4 +1,4 @@
-package io.github.emersondll.transactions.exception;
+﻿package io.github.vagner23.transactions.exception;
 
 /**
  * Exception thrown when a transaction request contains invalid or missing data.
@@ -19,3 +19,4 @@ public class InvalidTransactionException extends RuntimeException {
         super(message);
     }
 }
+

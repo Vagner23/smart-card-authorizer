@@ -1,6 +1,6 @@
-package io.github.emersondll.transactions.repository;
+﻿package io.github.vagner23.transactions.repository;
 
-import io.github.emersondll.transactions.document.AccountDocument;
+import io.github.vagner23.transactions.document.AccountDocument;
 
 /**
  * Custom extension interface for account-specific query operations.
@@ -22,3 +22,4 @@ public interface AccountRepositoryCustom {
      */
     AccountDocument findByDocumentNumber(String documentNumber);
 }
+

@@ -1,4 +1,4 @@
-package io.github.emersondll.transactions.config;
+﻿package io.github.vagner23.transactions.config;
 
 import java.util.Objects;
 
@@ -10,7 +10,7 @@ import org.springframework.amqp.core.DirectExchange;
 import org.springframework.amqp.core.Queue;
 import org.springframework.context.annotation.Configuration;
 
-import io.github.emersondll.transactions.config.constants.RabbitMqConstants;
+import io.github.vagner23.transactions.config.constants.RabbitMqConstants;
 import lombok.extern.slf4j.Slf4j;
 
 /**
@@ -22,16 +22,16 @@ import lombok.extern.slf4j.Slf4j;
  *
  * <p>Declared queues:
  * <ul>
- *   <li>{@code ACCOUNT} — account creation events</li>
- *   <li>{@code PAYMENT} — payment transaction events</li>
- *   <li>{@code PURCHASE} — purchase transaction events</li>
- *   <li>{@code WITHDRAWAL} — withdrawal transaction events</li>
+ *   <li>{@code ACCOUNT} â€” account creation events</li>
+ *   <li>{@code PAYMENT} â€” payment transaction events</li>
+ *   <li>{@code PURCHASE} â€” purchase transaction events</li>
+ *   <li>{@code WITHDRAWAL} â€” withdrawal transaction events</li>
  * </ul>
  *
  * @author Emerson Lima
  * @version 1.0
  * @since 1.0.0
- * @see io.github.emersondll.transactions.config.constants.RabbitMqConstants for queue name constants
+ * @see io.github.vagner23.transactions.config.constants.RabbitMqConstants for queue name constants
  */
 @Configuration
 @Slf4j
@@ -88,3 +88,4 @@ public class RabbitMqConnections {
         log.debug("Queue declared and bound. queue={}", queueName);
     }
 }
+

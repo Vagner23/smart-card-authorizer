@@ -1,4 +1,4 @@
-package io.github.emersondll.transactions.model.request;
+﻿package io.github.vagner23.transactions.model.request;
 
 import jakarta.validation.constraints.NotBlank;
 import java.util.Objects;
@@ -22,7 +22,7 @@ public record AccountRequest(
 
 ) {
     /**
-     * Compact constructor — enforces null-safety and trims the document number.
+     * Compact constructor â€” enforces null-safety and trims the document number.
      *
      * @throws NullPointerException     if documentNumber is null
      * @throws IllegalArgumentException if documentNumber is blank after trimming
@@ -35,3 +35,4 @@ public record AccountRequest(
         }
     }
 }
+

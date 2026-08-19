@@ -46,7 +46,7 @@ Microserviço de autorização de transações de cartão de crédito/débito, s
 ## Arquitetura
 
 ```
-src/main/java/io/github/emersondll/transactions/
+src/main/java/io/github/vagner23/transactions/
 ├── controller/          # Camada de apresentação (REST endpoints)
 │   ├── AccountController.java
 │   ├── TransactionsController.java
@@ -258,11 +258,11 @@ curl -s http://localhost:8080/digital/transactions/v1/transactions/balance/64771
 
 ## Desenvolvedor
 
-| Campo | Informação                                                                |
-|-------|---------------------------------------------------------------------------|
-| **Nome** | Emerson Lima                                                              |
-| **GitHub** | [github.com/Emersondll](https://github.com/Emersondll)                    |
-| **LinkedIn** | [linkedin.com/in/emersondll](https://www.linkedin.com/in/stackdeveloper/) |
+| Campo | Informação |
+|-------|------------|
+| **Nome** | Vagner Cardoso |
+| **GitHub** | [github.com/Vagner23](https://github.com/Vagner23) |
+| **LinkedIn** | [linkedin.com/in/vagner-cardoso-39792724a](https://www.linkedin.com/in/vagner-cardoso-39792724a/) |
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/stackdeveloper/)
-[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Emersondll)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/vagner-cardoso-39792724a/)
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Vagner23)

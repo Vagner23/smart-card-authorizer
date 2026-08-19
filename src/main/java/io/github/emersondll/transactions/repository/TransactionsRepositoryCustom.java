@@ -1,8 +1,8 @@
-package io.github.emersondll.transactions.repository;
+﻿package io.github.vagner23.transactions.repository;
 
 import java.util.List;
 
-import io.github.emersondll.transactions.document.TransactionsDocument;
+import io.github.vagner23.transactions.document.TransactionsDocument;
 
 /**
  * Custom extension interface for transaction-specific query operations.
@@ -25,3 +25,4 @@ public interface TransactionsRepositoryCustom {
      */
     List<TransactionsDocument> findAllByAccountId(String accountId);
 }
+

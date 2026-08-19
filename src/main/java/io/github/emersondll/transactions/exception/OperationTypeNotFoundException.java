@@ -1,4 +1,4 @@
-package io.github.emersondll.transactions.exception;
+﻿package io.github.vagner23.transactions.exception;
 
 /**
  * Exception thrown when an operation type is not found by the given identifier.
@@ -19,3 +19,4 @@ public class OperationTypeNotFoundException extends RuntimeException {
         super("Operation type not found for id: " + operationTypeId);
     }
 }
+

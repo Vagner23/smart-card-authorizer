@@ -1,4 +1,4 @@
-package io.github.emersondll.transactions.document;
+﻿package io.github.vagner23.transactions.document;
 
 import java.time.LocalDateTime;
 
@@ -14,22 +14,22 @@ import lombok.NoArgsConstructor;
  * MongoDB document entity representing an operation type (transaction category).
  *
  * <p>Operation types are pre-seeded at application startup by
- * {@link io.github.emersondll.transactions.config.MongoDbDDL} and are
+ * {@link io.github.vagner23.transactions.config.MongoDbDDL} and are
  * read-only during normal operation. They are stored in the
  * {@code operationsType} collection.</p>
  *
  * <p>Predefined types:
  * <ol>
- *   <li>{@code COMPRA A VISTA} — cash purchase (debit)</li>
- *   <li>{@code COMPRA PARCELADA} — instalment purchase (debit)</li>
- *   <li>{@code SAQUE} — withdrawal (debit)</li>
- *   <li>{@code PAGAMENTO} — payment (credit)</li>
+ *   <li>{@code COMPRA A VISTA} â€” cash purchase (debit)</li>
+ *   <li>{@code COMPRA PARCELADA} â€” instalment purchase (debit)</li>
+ *   <li>{@code SAQUE} â€” withdrawal (debit)</li>
+ *   <li>{@code PAGAMENTO} â€” payment (credit)</li>
  * </ol>
  *
  * @author Emerson Lima
  * @version 1.0
  * @since 1.0.0
- * @see io.github.emersondll.transactions.repository.OperationsTypeRepository
+ * @see io.github.vagner23.transactions.repository.OperationsTypeRepository
  */
 @Data
 @Builder
@@ -39,7 +39,7 @@ import lombok.NoArgsConstructor;
 public class OperationsTypeDocument {
 
     /**
-     * Unique operation type identifier (string "1"–"4").
+     * Unique operation type identifier (string "1"â€“"4").
      * Acts as the MongoDB {@code _id} field.
      */
     @Id
@@ -56,3 +56,4 @@ public class OperationsTypeDocument {
      */
     private LocalDateTime createdAt;
 }
+

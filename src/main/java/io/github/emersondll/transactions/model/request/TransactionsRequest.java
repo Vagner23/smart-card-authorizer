@@ -1,4 +1,4 @@
-package io.github.emersondll.transactions.model.request;
+﻿package io.github.vagner23.transactions.model.request;
 
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
@@ -8,7 +8,7 @@ import java.util.Objects;
 /**
  * Immutable record representing a request to register a new financial transaction.
  *
- * <p>Records are fully immutable — the {@code validateSignalValues} method in the
+ * <p>Records are fully immutable â€” the {@code validateSignalValues} method in the
  * service layer creates a new {@code TransactionsRequest} with the corrected amount
  * instead of mutating this instance.</p>
  *
@@ -33,7 +33,7 @@ public record TransactionsRequest(
 
 ) {
     /**
-     * Compact constructor — enforces null-safety on all fields.
+     * Compact constructor â€” enforces null-safety on all fields.
      *
      * @throws NullPointerException if any required field is null
      */
@@ -57,3 +57,4 @@ public record TransactionsRequest(
         return new TransactionsRequest(accountId, operationTypeId, correctedAmount);
     }
 }
+

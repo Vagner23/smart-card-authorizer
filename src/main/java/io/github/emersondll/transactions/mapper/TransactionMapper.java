@@ -1,4 +1,4 @@
-package io.github.emersondll.transactions.mapper;
+﻿package io.github.vagner23.transactions.mapper;
 
 import java.time.LocalDateTime;
 import java.util.Objects;
@@ -6,9 +6,9 @@ import java.util.UUID;
 
 import org.springframework.stereotype.Component;
 
-import io.github.emersondll.transactions.document.TransactionsDocument;
-import io.github.emersondll.transactions.model.request.TransactionsRequest;
-import io.github.emersondll.transactions.model.response.TransactionsResponse;
+import io.github.vagner23.transactions.document.TransactionsDocument;
+import io.github.vagner23.transactions.model.request.TransactionsRequest;
+import io.github.vagner23.transactions.model.response.TransactionsResponse;
 import lombok.extern.slf4j.Slf4j;
 
 /**
@@ -16,7 +16,7 @@ import lombok.extern.slf4j.Slf4j;
  * {@link TransactionsDocument}, and {@link TransactionsResponse}.
  *
  * <p>All conversions are stateless and thread-safe. This component contains no
- * business logic — it only translates data between layers.</p>
+ * business logic â€” it only translates data between layers.</p>
  *
  * <p>Thread Safety: Stateless and thread-safe; safe to use as a Spring singleton.</p>
  *
@@ -74,3 +74,4 @@ public class TransactionMapper {
         );
     }
 }
+

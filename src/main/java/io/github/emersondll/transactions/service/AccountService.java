@@ -1,10 +1,10 @@
-package io.github.emersondll.transactions.service;
+﻿package io.github.vagner23.transactions.service;
 
-import io.github.emersondll.transactions.document.AccountDocument;
-import io.github.emersondll.transactions.exception.AccountNotFoundException;
-import io.github.emersondll.transactions.model.request.AccountRequest;
-import io.github.emersondll.transactions.model.response.AccountDetailResponse;
-import io.github.emersondll.transactions.model.response.AccountResponse;
+import io.github.vagner23.transactions.document.AccountDocument;
+import io.github.vagner23.transactions.exception.AccountNotFoundException;
+import io.github.vagner23.transactions.model.request.AccountRequest;
+import io.github.vagner23.transactions.model.response.AccountDetailResponse;
+import io.github.vagner23.transactions.model.response.AccountResponse;
 
 /**
  * Service contract for account management operations.
@@ -16,7 +16,7 @@ import io.github.emersondll.transactions.model.response.AccountResponse;
  * @author Emerson Lima
  * @version 1.0
  * @since 1.0.0
- * @see io.github.emersondll.transactions.service.impl.AccountServiceImpl
+ * @see io.github.vagner23.transactions.service.impl.AccountServiceImpl
  */
 public interface AccountService {
 
@@ -46,10 +46,11 @@ public interface AccountService {
      * Retrieves the raw {@link AccountDocument} entity for the given document number.
      *
      * <p>Intended for internal use by other services (e.g., balance calculation).
-     * Returns {@code null} if no account is found — callers must handle this case.</p>
+     * Returns {@code null} if no account is found â€” callers must handle this case.</p>
      *
      * @param documentNumber the customer's document number (non-null)
      * @return the matching {@link AccountDocument}, or {@code null} if not found
      */
     AccountDocument findByDocumentNumber(String documentNumber);
 }
+

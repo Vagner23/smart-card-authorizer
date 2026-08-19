@@ -1,10 +1,10 @@
-package io.github.emersondll.transactions.repository;
+﻿package io.github.vagner23.transactions.repository;
 
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.data.mongodb.repository.Query;
 import org.springframework.stereotype.Repository;
 
-import io.github.emersondll.transactions.document.AccountDocument;
+import io.github.vagner23.transactions.document.AccountDocument;
 
 /**
  * MongoDB repository for {@link AccountDocument} persistence operations.
@@ -32,3 +32,4 @@ public interface AccountRepository extends MongoRepository<AccountDocument, Stri
     @Query
     AccountDocument findByDocumentNumber(String documentNumber);
 }
+

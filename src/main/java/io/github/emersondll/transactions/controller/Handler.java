@@ -1,4 +1,4 @@
-package io.github.emersondll.transactions.controller;
+﻿package io.github.vagner23.transactions.controller;
 
 import java.time.LocalDateTime;
 
@@ -8,9 +8,9 @@ import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 
-import io.github.emersondll.transactions.exception.AccountNotFoundException;
-import io.github.emersondll.transactions.exception.InvalidTransactionException;
-import io.github.emersondll.transactions.exception.OperationTypeNotFoundException;
+import io.github.vagner23.transactions.exception.AccountNotFoundException;
+import io.github.vagner23.transactions.exception.InvalidTransactionException;
+import io.github.vagner23.transactions.exception.OperationTypeNotFoundException;
 import lombok.extern.slf4j.Slf4j;
 
 /**
@@ -20,7 +20,7 @@ import lombok.extern.slf4j.Slf4j;
  * <p>Centralises error handling to prevent sensitive information leakage and
  * ensure uniform error contracts across all API endpoints.</p>
  *
- * <p>Error response record: {@link ErrorResponse} — includes an error code,
+ * <p>Error response record: {@link ErrorResponse} â€” includes an error code,
  * a human-readable message, and the timestamp of the failure.</p>
  *
  * @author Emerson Lima
@@ -110,3 +110,4 @@ public class Handler {
     public record ErrorResponse(String code, String message, LocalDateTime timestamp) {
     }
 }
+

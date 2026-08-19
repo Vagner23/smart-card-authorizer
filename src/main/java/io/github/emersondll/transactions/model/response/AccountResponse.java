@@ -1,4 +1,4 @@
-package io.github.emersondll.transactions.model.response;
+﻿package io.github.vagner23.transactions.model.response;
 
 import java.util.Objects;
 
@@ -18,7 +18,7 @@ import java.util.Objects;
 public record AccountResponse(String accountId) {
 
     /**
-     * Compact constructor — ensures accountId is never null.
+     * Compact constructor â€” ensures accountId is never null.
      *
      * @throws NullPointerException if accountId is null
      */
@@ -26,3 +26,4 @@ public record AccountResponse(String accountId) {
         Objects.requireNonNull(accountId, "Account ID cannot be null");
     }
 }
+

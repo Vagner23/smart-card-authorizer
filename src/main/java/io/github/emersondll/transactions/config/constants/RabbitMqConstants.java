@@ -1,10 +1,10 @@
-package io.github.emersondll.transactions.config.constants;
+﻿package io.github.vagner23.transactions.config.constants;
 
 /**
  * Constants for RabbitMQ queue names used by the smart-card-authorizer service.
  *
  * <p>Each constant corresponds to a queue declared at startup by
- * {@link io.github.emersondll.transactions.config.RabbitMqConnections} and
+ * {@link io.github.vagner23.transactions.config.RabbitMqConnections} and
  * consumed by downstream event processors.</p>
  *
  * @author Emerson Lima
@@ -27,3 +27,4 @@ public final class RabbitMqConstants {
     private RabbitMqConstants() {
     }
 }
+

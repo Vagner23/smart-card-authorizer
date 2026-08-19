@@ -1,4 +1,4 @@
-package io.github.emersondll.transactions.controller;
+﻿package io.github.vagner23.transactions.controller;
 
 import java.net.URI;
 import java.util.Objects;
@@ -12,10 +12,10 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import io.github.emersondll.transactions.model.request.AccountRequest;
-import io.github.emersondll.transactions.model.response.AccountDetailResponse;
-import io.github.emersondll.transactions.model.response.AccountResponse;
-import io.github.emersondll.transactions.service.AccountService;
+import io.github.vagner23.transactions.model.request.AccountRequest;
+import io.github.vagner23.transactions.model.response.AccountDetailResponse;
+import io.github.vagner23.transactions.model.response.AccountResponse;
+import io.github.vagner23.transactions.service.AccountService;
 import lombok.extern.slf4j.Slf4j;
 
 /**
@@ -94,3 +94,4 @@ public class AccountController implements BaseController {
         return ResponseEntity.ok(response);
     }
 }
+

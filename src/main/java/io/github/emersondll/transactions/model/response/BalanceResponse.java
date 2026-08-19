@@ -1,4 +1,4 @@
-package io.github.emersondll.transactions.model.response;
+﻿package io.github.vagner23.transactions.model.response;
 
 import java.math.BigDecimal;
 import java.util.Objects;
@@ -18,7 +18,7 @@ import java.util.Objects;
 public record BalanceResponse(BigDecimal amount) {
 
     /**
-     * Compact constructor — ensures amount is never null.
+     * Compact constructor â€” ensures amount is never null.
      *
      * @throws NullPointerException if amount is null
      */
@@ -26,3 +26,4 @@ public record BalanceResponse(BigDecimal amount) {
         Objects.requireNonNull(amount, "Amount cannot be null");
     }
 }
+

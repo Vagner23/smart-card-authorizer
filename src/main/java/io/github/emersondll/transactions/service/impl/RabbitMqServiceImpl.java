@@ -1,11 +1,11 @@
-package io.github.emersondll.transactions.service.impl;
+﻿package io.github.vagner23.transactions.service.impl;
 
 import java.util.Objects;
 
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.stereotype.Service;
 
-import io.github.emersondll.transactions.service.RabbitMqService;
+import io.github.vagner23.transactions.service.RabbitMqService;
 import lombok.extern.slf4j.Slf4j;
 
 /**
@@ -23,7 +23,7 @@ import lombok.extern.slf4j.Slf4j;
  * @author Emerson Lima
  * @version 1.0
  * @since 1.0.0
- * @see io.github.emersondll.transactions.config.RabbitMqConnections for queue declarations
+ * @see io.github.vagner23.transactions.config.RabbitMqConnections for queue declarations
  */
 @Service
 @Slf4j
@@ -53,3 +53,4 @@ public class RabbitMqServiceImpl implements RabbitMqService {
         template.convertAndSend(queue, message);
     }
 }
+

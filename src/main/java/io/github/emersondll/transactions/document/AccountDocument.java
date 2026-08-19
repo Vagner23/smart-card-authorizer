@@ -1,4 +1,4 @@
-package io.github.emersondll.transactions.document;
+﻿package io.github.vagner23.transactions.document;
 
 import java.time.LocalDateTime;
 
@@ -23,7 +23,7 @@ import lombok.NoArgsConstructor;
  * @author Emerson Lima
  * @version 1.0
  * @since 1.0.0
- * @see io.github.emersondll.transactions.repository.AccountRepository
+ * @see io.github.vagner23.transactions.repository.AccountRepository
  */
 @Data
 @Builder
@@ -33,7 +33,7 @@ import lombok.NoArgsConstructor;
 public class AccountDocument {
 
     /**
-     * Unique account identifier — a UUID generated at creation time.
+     * Unique account identifier â€” a UUID generated at creation time.
      * Acts as the MongoDB {@code _id} field.
      */
     @Id
@@ -51,3 +51,4 @@ public class AccountDocument {
      */
     private LocalDateTime createdAt;
 }
+

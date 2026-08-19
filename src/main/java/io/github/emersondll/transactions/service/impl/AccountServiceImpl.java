@@ -1,20 +1,20 @@
-package io.github.emersondll.transactions.service.impl;
+﻿package io.github.vagner23.transactions.service.impl;
 
 import java.util.Objects;
 import java.util.Optional;
 
 import org.springframework.stereotype.Service;
 
-import io.github.emersondll.transactions.config.constants.RabbitMqConstants;
-import io.github.emersondll.transactions.document.AccountDocument;
-import io.github.emersondll.transactions.exception.AccountNotFoundException;
-import io.github.emersondll.transactions.mapper.AccountMapper;
-import io.github.emersondll.transactions.model.request.AccountRequest;
-import io.github.emersondll.transactions.model.response.AccountDetailResponse;
-import io.github.emersondll.transactions.model.response.AccountResponse;
-import io.github.emersondll.transactions.repository.AccountRepository;
-import io.github.emersondll.transactions.service.AccountService;
-import io.github.emersondll.transactions.service.RabbitMqService;
+import io.github.vagner23.transactions.config.constants.RabbitMqConstants;
+import io.github.vagner23.transactions.document.AccountDocument;
+import io.github.vagner23.transactions.exception.AccountNotFoundException;
+import io.github.vagner23.transactions.mapper.AccountMapper;
+import io.github.vagner23.transactions.model.request.AccountRequest;
+import io.github.vagner23.transactions.model.response.AccountDetailResponse;
+import io.github.vagner23.transactions.model.response.AccountResponse;
+import io.github.vagner23.transactions.repository.AccountRepository;
+import io.github.vagner23.transactions.service.AccountService;
+import io.github.vagner23.transactions.service.RabbitMqService;
 import lombok.extern.slf4j.Slf4j;
 
 /**
@@ -115,3 +115,4 @@ public class AccountServiceImpl implements AccountService {
         return repository.findByDocumentNumber(documentNumber);
     }
 }
+

@@ -1,4 +1,4 @@
-package io.github.emersondll.transactions.service;
+﻿package io.github.vagner23.transactions.service;
 
 /**
  * Service contract for publishing messages to RabbitMQ queues.
@@ -10,7 +10,7 @@ package io.github.emersondll.transactions.service;
  * @author Emerson Lima
  * @version 1.0
  * @since 1.0.0
- * @see io.github.emersondll.transactions.service.impl.RabbitMqServiceImpl
+ * @see io.github.vagner23.transactions.service.impl.RabbitMqServiceImpl
  */
 public interface RabbitMqService {
 
@@ -25,3 +25,4 @@ public interface RabbitMqService {
      */
     void send(String queue, Object message);
 }
+

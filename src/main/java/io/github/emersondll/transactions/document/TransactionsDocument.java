@@ -1,4 +1,4 @@
-package io.github.emersondll.transactions.document;
+﻿package io.github.vagner23.transactions.document;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
@@ -27,7 +27,7 @@ import lombok.NoArgsConstructor;
  * @author Emerson Lima
  * @version 1.0
  * @since 1.0.0
- * @see io.github.emersondll.transactions.repository.TransactionsRepository
+ * @see io.github.vagner23.transactions.repository.TransactionsRepository
  */
 @Data
 @Builder
@@ -37,7 +37,7 @@ import lombok.NoArgsConstructor;
 public class TransactionsDocument {
 
     /**
-     * Unique transaction identifier — a UUID generated at registration time.
+     * Unique transaction identifier â€” a UUID generated at registration time.
      * Acts as the MongoDB {@code _id} field.
      */
     @Id
@@ -66,3 +66,4 @@ public class TransactionsDocument {
      */
     private LocalDateTime eventDate;
 }
+

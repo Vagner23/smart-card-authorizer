@@ -1,4 +1,4 @@
-package io.github.emersondll.transactions.repository;
+﻿package io.github.vagner23.transactions.repository;
 
 import java.util.List;
 
@@ -6,7 +6,7 @@ import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.data.mongodb.repository.Query;
 import org.springframework.stereotype.Repository;
 
-import io.github.emersondll.transactions.document.TransactionsDocument;
+import io.github.vagner23.transactions.document.TransactionsDocument;
 
 /**
  * MongoDB repository for {@link TransactionsDocument} persistence operations.
@@ -33,3 +33,4 @@ public interface TransactionsRepository extends MongoRepository<TransactionsDocu
     @Query
     List<TransactionsDocument> findAllByAccountId(String accountId);
 }
+

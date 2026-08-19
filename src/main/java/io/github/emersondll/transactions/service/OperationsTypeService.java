@@ -1,7 +1,7 @@
-package io.github.emersondll.transactions.service;
+﻿package io.github.vagner23.transactions.service;
 
-import io.github.emersondll.transactions.document.OperationsTypeDocument;
-import io.github.emersondll.transactions.exception.OperationTypeNotFoundException;
+import io.github.vagner23.transactions.document.OperationsTypeDocument;
+import io.github.vagner23.transactions.exception.OperationTypeNotFoundException;
 
 /**
  * Service contract for operation type look-up operations.
@@ -13,7 +13,7 @@ import io.github.emersondll.transactions.exception.OperationTypeNotFoundExceptio
  * @author Emerson Lima
  * @version 1.0
  * @since 1.0.0
- * @see io.github.emersondll.transactions.service.impl.OperationsTypeServiceImpl
+ * @see io.github.vagner23.transactions.service.impl.OperationsTypeServiceImpl
  */
 public interface OperationsTypeService {
 
@@ -26,3 +26,4 @@ public interface OperationsTypeService {
      */
     OperationsTypeDocument findById(String id);
 }
+

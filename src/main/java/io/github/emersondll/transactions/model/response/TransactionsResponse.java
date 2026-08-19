@@ -1,4 +1,4 @@
-package io.github.emersondll.transactions.model.response;
+﻿package io.github.vagner23.transactions.model.response;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
@@ -12,7 +12,7 @@ import java.util.Objects;
  *
  * @param transactionsId  the system-generated unique transaction identifier (UUID)
  * @param accountId       the account identifier associated with this transaction
- * @param operationTypeId the operation type identifier (1–4)
+ * @param operationTypeId the operation type identifier (1â€“4)
  * @param amount          the monetary value after sign normalisation (negative = debit,
  *                        positive = payment/credit)
  * @param eventDate       the UTC timestamp when the transaction was recorded
@@ -28,7 +28,7 @@ public record TransactionsResponse(
         LocalDateTime eventDate
 ) {
     /**
-     * Compact constructor — ensures all fields are non-null.
+     * Compact constructor â€” ensures all fields are non-null.
      *
      * @throws NullPointerException if any field is null
      */
@@ -40,3 +40,4 @@ public record TransactionsResponse(
         Objects.requireNonNull(eventDate, "Event date cannot be null");
     }
 }
+

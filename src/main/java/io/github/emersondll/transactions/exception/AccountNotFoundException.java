@@ -1,4 +1,4 @@
-package io.github.emersondll.transactions.exception;
+﻿package io.github.vagner23.transactions.exception;
 
 /**
  * Exception thrown when an account is not found by the given identifier.
@@ -19,3 +19,4 @@ public class AccountNotFoundException extends RuntimeException {
         super("Account not found for id: " + accountId);
     }
 }
+

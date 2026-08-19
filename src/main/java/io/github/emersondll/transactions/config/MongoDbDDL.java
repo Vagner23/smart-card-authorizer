@@ -1,4 +1,4 @@
-package io.github.emersondll.transactions.config;
+﻿package io.github.vagner23.transactions.config;
 
 import java.time.LocalDateTime;
 import java.util.List;
@@ -8,9 +8,9 @@ import jakarta.annotation.PostConstruct;
 
 import org.springframework.context.annotation.Configuration;
 
-import io.github.emersondll.transactions.config.constants.MongoDbOperationTypeConstants;
-import io.github.emersondll.transactions.document.OperationsTypeDocument;
-import io.github.emersondll.transactions.repository.OperationsTypeRepository;
+import io.github.vagner23.transactions.config.constants.MongoDbOperationTypeConstants;
+import io.github.vagner23.transactions.document.OperationsTypeDocument;
+import io.github.vagner23.transactions.repository.OperationsTypeRepository;
 import lombok.extern.slf4j.Slf4j;
 
 /**
@@ -93,3 +93,4 @@ public class MongoDbDDL {
                 .build();
     }
 }
+

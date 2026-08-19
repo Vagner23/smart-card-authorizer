@@ -1,4 +1,4 @@
-package io.github.emersondll.transactions;
+﻿package io.github.vagner23.transactions;
 
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -19,3 +19,4 @@ class TransactionsApplicationTests {
         // Unit tests in service packages validate business logic
     }
 }
+

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
@@ -8,11 +8,11 @@
 		<version>3.2.5</version>
 		<relativePath/>
 	</parent>
-	<groupId>io.github.emersondll</groupId>
+	<groupId>io.github.vagner23</groupId>
 	<artifactId>transactions</artifactId>
 	<version>1.0.0</version>
 	<name>smart-card-authorizer</name>
-	<description>Smart Card Transaction Authorizer — simulates credit/debit card operations</description>
+	<description>Smart Card Transaction Authorizer â€” simulates credit/debit card operations</description>
 
 	<properties>
 		<java.version>22</java.version>
@@ -46,7 +46,7 @@
 			<artifactId>spring-boot-starter-amqp</artifactId>
 		</dependency>
 
-		<!-- Lombok (apenas @Slf4j — sem @Data, @Builder) -->
+		<!-- Lombok (apenas @Slf4j â€” sem @Data, @Builder) -->
 		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
@@ -118,3 +118,4 @@
 	</build>
 
 </project>
+

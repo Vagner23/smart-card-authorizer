@@ -1,4 +1,4 @@
-package io.github.emersondll.transactions.service.impl;
+﻿package io.github.vagner23.transactions.service.impl;
 
 import java.math.BigDecimal;
 import java.util.List;
@@ -6,20 +6,20 @@ import java.util.Objects;
 
 import org.springframework.stereotype.Service;
 
-import io.github.emersondll.transactions.config.constants.RabbitMqConstants;
-import io.github.emersondll.transactions.document.AccountDocument;
-import io.github.emersondll.transactions.document.OperationsTypeDocument;
-import io.github.emersondll.transactions.document.TransactionsDocument;
-import io.github.emersondll.transactions.exception.InvalidTransactionException;
-import io.github.emersondll.transactions.mapper.TransactionMapper;
-import io.github.emersondll.transactions.model.request.TransactionsRequest;
-import io.github.emersondll.transactions.model.response.BalanceResponse;
-import io.github.emersondll.transactions.model.response.TransactionsResponse;
-import io.github.emersondll.transactions.repository.TransactionsRepository;
-import io.github.emersondll.transactions.service.AccountService;
-import io.github.emersondll.transactions.service.OperationsTypeService;
-import io.github.emersondll.transactions.service.RabbitMqService;
-import io.github.emersondll.transactions.service.TransactionsService;
+import io.github.vagner23.transactions.config.constants.RabbitMqConstants;
+import io.github.vagner23.transactions.document.AccountDocument;
+import io.github.vagner23.transactions.document.OperationsTypeDocument;
+import io.github.vagner23.transactions.document.TransactionsDocument;
+import io.github.vagner23.transactions.exception.InvalidTransactionException;
+import io.github.vagner23.transactions.mapper.TransactionMapper;
+import io.github.vagner23.transactions.model.request.TransactionsRequest;
+import io.github.vagner23.transactions.model.response.BalanceResponse;
+import io.github.vagner23.transactions.model.response.TransactionsResponse;
+import io.github.vagner23.transactions.repository.TransactionsRepository;
+import io.github.vagner23.transactions.service.AccountService;
+import io.github.vagner23.transactions.service.OperationsTypeService;
+import io.github.vagner23.transactions.service.RabbitMqService;
+import io.github.vagner23.transactions.service.TransactionsService;
 import lombok.extern.slf4j.Slf4j;
 
 /**
@@ -203,3 +203,4 @@ public class TransactionsServiceImpl implements TransactionsService {
                 + VALUE_SUFFIX + request.amount();
     }
 }
+
