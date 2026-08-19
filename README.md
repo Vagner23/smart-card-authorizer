@@ -1,8 +1,28 @@
-# Smart Card Authorizer
+# 💳 Smart Card Authorizer
 
-Microserviço de autorização de transações de cartão de crédito/débito, simulando as principais operações financeiras: compra à vista, compra parcelada, saque e pagamento.
+Microserviço REST para autorização e processamento de transações de cartão
+de crédito/débito, desenvolvido com **Java 22** e **Spring Boot**.
+
+O projeto simula operações financeiras como:
+
+- 💳 Compra à vista
+- 🧾 Compra parcelada
+- 💰 Saque
+- 💵 Pagamento
+
+A solução utiliza **MongoDB** para persistência e **RabbitMQ** para
+comunicação assíncrona baseada em eventos.
 
 ---
+## 🧪 Qualidade e Testes
+
+- ✅ **20 testes automatizados**
+- ✅ **0 falhas**
+- ✅ **0 erros**
+- ✅ **Build Maven: SUCCESS**
+- ✅ **JaCoCo configurado para cobertura**
+- ✅ Testes cobrindo cenários de sucesso, erros e casos de borda
+
 
 ## Desafios Atendidos
 
@@ -46,30 +66,33 @@ Microserviço de autorização de transações de cartão de crédito/débito, s
 ## Arquitetura
 
 ```
+## Arquitetura
+
+```text
 src/main/java/io/github/vagner23/transactions/
 ├── controller/          # Camada de apresentação (REST endpoints)
 │   ├── AccountController.java
 │   ├── TransactionsController.java
 │   ├── Handler.java     # @RestControllerAdvice global
 │   └── BaseController.java
-├── service/             # Contratos de negócio (interfaces)
+├── service/             # Contratos de negócio
 │   ├── AccountService.java
 │   ├── TransactionsService.java
 │   ├── OperationsTypeService.java
-│   └── RabbitMqService.java
+│   ├── RabbitMqService.java
 │   └── impl/            # Implementações de negócio
 │       ├── AccountServiceImpl.java
 │       ├── TransactionsServiceImpl.java
 │       ├── OperationsTypeServiceImpl.java
 │       └── RabbitMqServiceImpl.java
 ├── repository/          # Camada de persistência (MongoDB)
-├── document/            # Entidades MongoDB
+├── document/            # Documentos MongoDB
 ├── model/
-│   ├── request/         # Records de entrada (AccountRequest, TransactionsRequest)
-│   └── response/        # Records de saída (AccountResponse, AccountDetailResponse, ...)
+│   ├── request/         # Records de entrada
+│   └── response/        # Records de saída
 ├── mapper/              # Conversão entre camadas
 ├── exception/           # Exceções de domínio
-└── config/              # Configurações (MongoDB DDL, RabbitMQ)
+└── config/              # Configurações MongoDB e RabbitMQ
 ```
 
 **Fluxo:** `Controller → Service → Repository → MongoDB`  
@@ -266,3 +289,4 @@ curl -s http://localhost:8080/digital/transactions/v1/transactions/balance/64771
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/vagner-cardoso-39792724a/)
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Vagner23)
+
